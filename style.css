@@ -1,0 +1,88 @@
+@font-face {
+  font-family: 'Biro Script Plus';
+  src: url('biro-script-plus_freefontdownload_org/biro-script-plus.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'TAN Garland';
+  src: url('TAN-Garland/TAN-Garland/TAN-Garland-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('Bricolage_Grotesque,Open_Sans/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+body {
+    background-color: #3a3230;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.topo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.menu-navegacao {
+    display: flex;
+    gap: 20px;
+}
+
+.container-perfil {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.foto-perfil {
+    width: 150px;
+    height: auto;
+}
+
+.bloco-perfil {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+h1 {
+    color: #fff;
+    font-family: 'TAN Garland', Georgia, 'Times New Roman', serif;
+    font-size: 24px;
+    margin: 0;
+}
+h2 {
+    color: #fff;
+    font-family: 'Biro Script Plus', cursive, sans-serif;
+    font-size: 20px;
+    margin: 0;
+}
+h4 {
+    color: #fff;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
