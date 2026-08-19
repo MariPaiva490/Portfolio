@@ -1,21 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
+
 @font-face {
   font-family: 'Biro Script Plus';
   src: url('biro-script-plus_freefontdownload_org/biro-script-plus.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
-
-
-@font-face {
-  font-family: 'TAN Garland';
-  src: url('TAN-Garland/TAN-Garland/TAN-Garland-Regular.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  src: url('Bricolage_Grotesque,Open_Sans/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -46,43 +35,104 @@ body {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.menu-navegacao {
+.topo .menu-navegacao {
     display: flex;
-    gap: 20px;
+    gap: 25px;
+}
+
+.topo .menu-navegacao .link-pagina {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 0.4;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+
+}
+
+.topo .menu-navegacao .link-pagina:hover{
+    opacity: 0.8;
+}
+
+.topo .menu-navegacao .link-pagina.ativo {
+    opacity: 1 !important;
+    font-weight: 600 !important;
+    border-bottom: 2px solid #fff !important;
+    background: transparent !important;
 }
 
 .container-perfil {
     display: flex;
-    align-items: flex-start;
-    gap: 20px;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: 40px 10% 40px 0;
+    flex: 1;
 }
 
 .foto-perfil {
-    width: 150px;
+    width: 480px;
+    max-width: 42vw;
     height: auto;
+    object-fit: contain;
 }
 
 .bloco-perfil {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    gap: 70px;
+    flex-grow: 1;
+    max-width: 700px;
+    padding-top: 15px 0;
 }
 
-h1 {
-    color: #fff;
-    font-family: 'TAN Garland', Georgia, 'Times New Roman', serif;
-    font-size: 24px;
-    margin: 0;
+.titulos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
-h2 {
-    color: #fff;
+
+.titulos h1 {
     font-family: 'Biro Script Plus', cursive, sans-serif;
-    font-size: 20px;
-    margin: 0;
+    font-size: 55px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    text-transform: uppercase;
+    white-space: nowrap;
+    text-align: center;
 }
-h4 {
-    color: #fff;
-    font-family: 'Open Sans', Arial, sans-serif;
+.titulos h2 {
+    font-family: 'Eagle Lake', cursive, sans-serif;
+    font-size: 65px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.info-pessoal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-pessoal .nome {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.info-pessoal .cargo {
     font-size: 16px;
-    margin: 0;
+    color: #ddd;
+}
+
+.btn-contato {
+    color: #aaa;
+    text-decoration: underline;
+    font-size: 12px;
+    letter-spacing: 1px;
 }
